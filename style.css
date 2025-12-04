@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Federant&family=Figtree:ital,wght@0,300..900;1,300..900&family=Mozilla+Headline:wght@200..700&family=Prosto+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&family=Tagesschrift&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Story Script", sans-serif;
+}
+
+body {
+    background: linear-gradient(lightgreen, rgb(239, 255, 239));
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    width:100%;
+
+}
+
+.container img {
+    display: block;
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 23px black;
+    border-radius: 40px;
+
+}
+
+.container h1 {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.message1 {
+    scroll-behavior: smooth;
+    border: 2px solid black;
+    width: 50%;
+    padding: 20px;
+    height: 70%;
+    box-shadow: 0 0 12px black;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+.message {
+    display: flex;
+    width: fit-content;
+    max-width: 60%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px black;
+    padding: 9px;
+    cursor: pointer;
+   
+    word-wrap: break-word;
+    /* Forces long words to break onto a new line */
+    overflow-wrap: break-word;
+    /* Modern standard for the line above */
+    line-height: 1.4;
+    font-weight: bold;
+    overflow: auto;
+    font-size: 1.3rem;
+}
+
+.right {
+    float: right;
+    clear: both;
+     border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background: lightblue;
+
+    border-bottom-left-radius: 18px;
+    
+}
+
+.left {
+    background: lightblue;
+    float: left;
+    clear: both;
+     border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+form {
+    margin-top: 20px;
+    /* max-width: 100vw; */
+}
+
+form input {
+    position: absolute;
+    left: 25%;
+    width: 45%;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin: auto;
+    box-shadow: 0 0 12px black;
+    background: transparent;
+    font-weight: bold;
+    outline: none;
+}
+
+form button {
+    font-weight: bold;
+    padding: 7px 15px;
+    position: absolute;
+    font-size: 16px;
+    border-radius: 8px;
+    right: 25%;
+    border: 2px solid black;
+    box-shadow: 0 0 12px black;
+    cursor: pointer;
+    background: transparent;
+}
+form button:hover{
+    box-shadow: 0 0 12px rgb(255, 255, 255);
+    background-color: rgb(8, 31, 8);
+    color: white;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width:1266px) {
+    .container h1 {
+    display: block;
+    font-size: 24px;
+    width:100%;
+    margin:auto;
+    text-align: center;
+    margin: 5px;
+}
+.container img{
+    margin-bottom: 0;
+}
+.message{
+    font-size: 1rem;
+}
+.message1{
+    padding:10px;
+    width:95%;
+}
+form input{
+    width:95%;
+    padding: 5px;
+    left:3%;
+}
+form button{
+    font-size: 16px;
+    padding: 5px 10px;
+    bottom: 3px;
+    
+    right:31%;
+    width:40%;
+}
+}
